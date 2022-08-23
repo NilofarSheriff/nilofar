@@ -1,0 +1,904 @@
+Assignment - 1 - General
+========================================================
+
+notepad++
+
+$ git init GitDemo
+=====================================
+Initialized empty Git repository in C:/Users/M NILOFAR/GitDemo/.git/
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ ls-al
+======================================
+bash: ls-al: command not found
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ ls -al
+========================================
+total 6103
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 16:30  ./
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 22:03  ../
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 19 19:18  .3T/
+-rw-r--r-- 1 M NILOFAR 197121     175 Aug  2 19:34  .angular-config.json
+-rw-r--r-- 1 M NILOFAR 197121     247 Aug 17 16:28  .bash_history
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 18 11:39  .cache/
+-rw-r--r-- 1 M NILOFAR 197121      90 Jul 20 03:38  .dbshell
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 22:42  .dotnet/
+-rw-r--r-- 1 M NILOFAR 197121     110 Aug 17 16:27  .gitconfig
+-rw-r--r-- 1 M NILOFAR 197121      20 Aug 17 15:45  .lesshst
+-rw-r--r-- 1 M NILOFAR 197121       0 Jul 19 20:20  .mongorc.js
+-rw-r--r-- 1 M NILOFAR 197121       0 Aug  2 18:27  .node_repl_history
+-rw-r--r-- 1 M NILOFAR 197121      27 Aug  5 23:35  .npmrc
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 18 11:38  .swt/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 13 12:25  .templateengine/
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 14 20:24  .vscode/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:00  AppData/
+lrwxrwxrwx 1 M NILOFAR 197121      34 Aug 12 17:56 'Application Data' -> '/c/Users/M NILOFAR/AppData/Roaming'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Contacts/
+lrwxrwxrwx 1 M NILOFAR 197121      62 Aug 12 17:56  Cookies -> '/c/Users/M NILOFAR/AppData/Local/Microsoft/Windows/INetCookies'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:00  Desktop/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 22:04  Documents/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 15:59  Downloads/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Favorites/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 16:30  GitDemo/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Links/
+lrwxrwxrwx 1 M NILOFAR 197121      32 Aug 12 17:56 'Local Settings' -> '/c/Users/M NILOFAR/AppData/Local'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Music/
+lrwxrwxrwx 1 M NILOFAR 197121      28 Aug 12 17:56 'My Documents' -> '/c/Users/M NILOFAR/Documents'/
+-rw-r--r-- 1 M NILOFAR 197121 3145728 Aug 16 21:49  NTUSER.DAT
+-rw-r--r-- 1 M NILOFAR 197121   65536 Aug 12 17:56  NTUSER.DAT{fb5c5753-1a38-11ed-8b85-b9d58e0ea870}.TM.blf
+-rw-r--r-- 1 M NILOFAR 197121  524288 Aug 12 17:56  NTUSER.DAT{fb5c5753-1a38-11ed-8b85-b9d58e0ea870}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 M NILOFAR 197121  524288 Aug 12 17:56  NTUSER.DAT{fb5c5753-1a38-11ed-8b85-b9d58e0ea870}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 M NILOFAR 197121      70 Aug 12 17:56  NetHood -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 15:39  OneDrive/
+lrwxrwxrwx 1 M NILOFAR 197121      70 Aug 12 17:56  PrintHood -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 M NILOFAR 197121      59 Aug 12 17:56  Recent -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Recent'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06 'Saved Games'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:08  Searches/
+lrwxrwxrwx 1 M NILOFAR 197121      59 Aug 12 17:56  SendTo -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/SendTo'/
+lrwxrwxrwx 1 M NILOFAR 197121      63 Aug 12 17:56 'Start Menu' -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 M NILOFAR 197121      62 Aug 12 17:56  Templates -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Templates'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Videos/
+-rw-r--r-- 1 M NILOFAR 197121       0 Aug 17 16:25  bash
+-rw-r--r-- 1 M NILOFAR 197121       0 Jul 19 19:18  md
+-rw-r--r-- 1 M NILOFAR 197121  946176 Aug 12 17:56  ntuser.dat.LOG1
+-rw-r--r-- 1 M NILOFAR 197121  954368 Aug 12 17:56  ntuser.dat.LOG2
+-rw-r--r-- 1 M NILOFAR 197121      20 Aug 12 18:06  ntuser.ini
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 13 12:36  source/
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ echo "Welocme to the version Control" >> welcome.txt
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ ls -al
+==========================================
+total 5460
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 16:32  ./
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 22:03  ../
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 19 19:18  .3T/
+-rw-r--r-- 1 M NILOFAR 197121     175 Aug  2 19:34  .angular-config.json
+-rw-r--r-- 1 M NILOFAR 197121     247 Aug 17 16:28  .bash_history
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 18 11:39  .cache/
+-rw-r--r-- 1 M NILOFAR 197121      90 Jul 20 03:38  .dbshell
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 22:42  .dotnet/
+-rw-r--r-- 1 M NILOFAR 197121     110 Aug 17 16:27  .gitconfig
+-rw-r--r-- 1 M NILOFAR 197121      20 Aug 17 15:45  .lesshst
+-rw-r--r-- 1 M NILOFAR 197121       0 Jul 19 20:20  .mongorc.js
+-rw-r--r-- 1 M NILOFAR 197121       0 Aug  2 18:27  .node_repl_history
+-rw-r--r-- 1 M NILOFAR 197121      27 Aug  5 23:35  .npmrc
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 18 11:38  .swt/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 13 12:25  .templateengine/
+drwxr-xr-x 1 M NILOFAR 197121       0 Jul 14 20:24  .vscode/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:00  AppData/
+lrwxrwxrwx 1 M NILOFAR 197121      34 Aug 12 17:56 'Application Data' -> '/c/Users/M NILOFAR/AppData/Roaming'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Contacts/
+lrwxrwxrwx 1 M NILOFAR 197121      62 Aug 12 17:56  Cookies -> '/c/Users/M NILOFAR/AppData/Local/Microsoft/Windows/INetCookies'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:00  Desktop/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 22:04  Documents/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 15:59  Downloads/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Favorites/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 16:30  GitDemo/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Links/
+lrwxrwxrwx 1 M NILOFAR 197121      32 Aug 12 17:56 'Local Settings' -> '/c/Users/M NILOFAR/AppData/Local'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Music/
+lrwxrwxrwx 1 M NILOFAR 197121      28 Aug 12 17:56 'My Documents' -> '/c/Users/M NILOFAR/Documents'/
+-rw-r--r-- 1 M NILOFAR 197121 3145728 Aug 16 21:49  NTUSER.DAT
+-rw-r--r-- 1 M NILOFAR 197121   65536 Aug 12 17:56  NTUSER.DAT{fb5c5753-1a38-11ed-8b85-b9d58e0ea870}.TM.blf
+-rw-r--r-- 1 M NILOFAR 197121  524288 Aug 12 17:56  NTUSER.DAT{fb5c5753-1a38-11ed-8b85-b9d58e0ea870}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 M NILOFAR 197121  524288 Aug 12 17:56  NTUSER.DAT{fb5c5753-1a38-11ed-8b85-b9d58e0ea870}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 M NILOFAR 197121      70 Aug 12 17:56  NetHood -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 17 15:39  OneDrive/
+lrwxrwxrwx 1 M NILOFAR 197121      70 Aug 12 17:56  PrintHood -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 M NILOFAR 197121      59 Aug 12 17:56  Recent -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Recent'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06 'Saved Games'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:08  Searches/
+lrwxrwxrwx 1 M NILOFAR 197121      59 Aug 12 17:56  SendTo -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/SendTo'/
+lrwxrwxrwx 1 M NILOFAR 197121      63 Aug 12 17:56 'Start Menu' -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 M NILOFAR 197121      62 Aug 12 17:56  Templates -> '/c/Users/M NILOFAR/AppData/Roaming/Microsoft/Windows/Templates'/
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 12 18:06  Videos/
+-rw-r--r-- 1 M NILOFAR 197121       0 Aug 17 16:25  bash
+-rw-r--r-- 1 M NILOFAR 197121       0 Jul 19 19:18  md
+-rw-r--r-- 1 M NILOFAR 197121  286720 Aug 12 17:56  ntuser.dat.LOG1
+-rw-r--r-- 1 M NILOFAR 197121  954368 Aug 12 17:56  ntuser.dat.LOG2
+-rw-r--r-- 1 M NILOFAR 197121      20 Aug 12 18:06  ntuser.ini
+drwxr-xr-x 1 M NILOFAR 197121       0 Aug 13 12:36  source/
+-rw-r--r-- 1 M NILOFAR 197121      31 Aug 17 16:32  welcome.txt
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ cat welcome.txt
+==============================================
+Welocme to the version Control
+
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ pwd
+/c/Users/M NILOFAR
+
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ cd GitDemo
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (master)
+$ cat welcome.txt
+===============================
+Welocme to the version Control
+==============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (master)
+$ git commit
+==================================
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        welcome.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+=================================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (master)
+$ git add welcome.txt
+=========================================
+warning: in the working copy of 'welcome.txt', LF will be replaced by CRLF the next time Git touches it
+
+==================================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (master)
+$ git commit
+==========================================
+hint: Waiting for your editor to close the file...
+
+Aborting commit due to empty commit message.
+
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (master)
+$ git status
+===================================
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   welcome.txt
+======================================================================================================
+$ git commit -m "initial commit"
+===================================================
+[main (root-commit) 8f703f3] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 welcome.txt
+======================================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ git push origin main
+====================================================
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 245.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NilofarSheriff/GitDemo.git
+ * [new branch]      main -> main
+=========================================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ git pull origin main
+=====================================================
+From https://github.com/NilofarSheriff/GitDemo
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+============================================================================================
+
+
+
+**************************************************************************************************
+ASSIGNMENT 2 - GITIGNORE
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ pwd
+=======================================
+/c/Users/M NILOFAR
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+========================================
+$ cd GitDemo
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ echo "WELCOME" >> welcome.log
+=========================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ ls -lr
+==========================================
+total 2
+-rw-r--r-- 1 M NILOFAR 197121 31 Aug 17 16:32 welcome.txt
+-rw-r--r-- 1 M NILOFAR 197121  8 Aug 17 19:08 welcome.log
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ git status
+============================================
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        welcome.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ mkdir log folder
+=================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ cd log folder
+bash: cd: too many arguments
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ echo "hello" >> hello.log
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ ls -al
+total 27
+drwxr-xr-x 1 M NILOFAR 197121  0 Aug 17 19:18 ./
+drwxr-xr-x 1 M NILOFAR 197121  0 Aug 17 17:07 ../
+drwxr-xr-x 1 M NILOFAR 197121  0 Aug 17 19:09 .git/
+drwxr-xr-x 1 M NILOFAR 197121  0 Aug 17 19:16 folder/
+-rw-r--r-- 1 M NILOFAR 197121  6 Aug 17 19:18 hello.log
+drwxr-xr-x 1 M NILOFAR 197121  0 Aug 17 19:16 log/
+-rw-r--r-- 1 M NILOFAR 197121  8 Aug 17 19:08 welcome.log
+-rw-r--r-- 1 M NILOFAR 197121 31 Aug 17 16:32 welcome.txt
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+======================================================
+$ git clone https://github.com/NilofarSheriff/welcomeignore.git
+Cloning into 'welcomeignore'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+============================================================================================
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo (main)
+$ cd welcomeignore
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ ls
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ ls -la
+total 16
+drwxr-xr-x 1 M NILOFAR 197121    0 Aug 17 19:31 ./
+drwxr-xr-x 1 M NILOFAR 197121    0 Aug 17 19:31 ../
+drwxr-xr-x 1 M NILOFAR 197121    0 Aug 17 19:31 .git/
+-rw-r--r-- 1 M NILOFAR 197121 6352 Aug 17 19:31 .gitignore
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ git status
+====================================================
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ echo "Hai Nilo!!!" >> nilo.txt
+echo "Hai Nilogit status!" >> nilo.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ git status
+=======================================================
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        nilo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ git add nilo.txt
+==========================================================
+warning: in the working copy of 'nilo.txt', LF will be replaced by CRLF the next time Git touches it
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ git status
+==========================================================
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   nilo.txt
+
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ echo "hello" >> hello.log
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ mkdir log folder
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/GitDemo/welcomeignore (main)
+$ git status
+========================================
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+============================================================================================
+
+**************************************************************************************************
+
+ASSIGNMENT -3 -  Branch
+============================================================================================
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~
+$ cd mehar
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ ls -lr
+total 0
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git branch nilo
+fatal: not a valid object name: 'master'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git commit
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git branch nilo
+fatal: not a valid object name: 'master'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ ^C
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ touch text.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ add test.txt
+bash: add: command not found
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git add test.txt
+fatal: pathspec 'test.txt' did not match any files
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ touch text.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git add text.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git commit -m "first commit"
+[master (root-commit) 6c31a6f] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git branch Nilo
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git branch
+  Nilo
+* master
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git checkout nilo
+Switched to branch 'nilo'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ echo "Im Zam, Nilo's Sister" >> zam.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git status
+On branch nilo
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        zam.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git add zam.txt
+warning: in the working copy of 'zam.txt', LF will be replaced by CRLF the next time Git touches it
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git status
+On branch nilo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   zam.txt
+
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git branch
+  Nilo
+  master
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git commit -m "Added zam text to nilo branch"
+[nilo 29cd2f7] Added zam text to nilo branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 zam.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ ls
+text.txt  zam.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git checkout master
+Switched to branch 'master'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git branch
+* master
+  nilo
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$
+============================================================================================
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git commit -m "added branch"
+==========================================
+On branch nilo
+nothing to commit, working tree clean
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git push origin nilo
+==============================================
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'nilo' on GitHub by visiting:
+remote:      https://github.com/NilofarSheriff/mehar/pull/new/nilo
+remote:
+To https://github.com/NilofarSheriff/mehar.git
+ * [new branch]      nilo -> nilo
+============================================================================================
+ASSIGNMENT 3 - MERGING
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git branch ayan
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (nilo)
+$ git checkout ayan
+Switched to branch 'ayan'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (ayan)
+$ echo "hello I'm Ayan" >> hello.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (ayan)
+$ git add ,
+fatal: pathspec ',' did not match any files
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (ayan)
+$ git add .
+warning: in the working copy of 'hello.txt', LF will be replaced by CRLF the next time Git touches it
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (ayan)
+$ git branch
+* ayan
+  master
+  nilo
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (ayan)
+$ git commit -m "files added"
+[ayan 35ae83d] files added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (ayan)
+$ git push origin ayan
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ayan' on GitHub by visiting:
+remote:      https://github.com/NilofarSheriff/mehar/pull/new/ayan
+remote:
+To https://github.com/NilofarSheriff/mehar.git
+ * [new branch]      ayan -> ayan
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (ayan)
+$ git checkout master
+Switched to branch 'master'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git merge ayan
+Updating 6c31a6f..35ae83d
+Fast-forward
+ hello.txt | 1 +
+ zam.txt   | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 hello.txt
+ create mode 100644 zam.txt
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git add .
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git commit -m "Merging done"
+On branch master
+nothing to commit, working tree clean
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/NilofarSheriff/mehar.git'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git push origin HEAD: main
+fatal: invalid refspec 'HEAD:'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ push origin HEAD:master
+bash: push: command not found
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git push origin HEAD:master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/NilofarSheriff/mehar/pull/new/master
+remote:
+To https://github.com/NilofarSheriff/mehar.git
+ * [new branch]      HEAD -> master
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git pull origin main
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.22 KiB | 178.00 KiB/s, done.
+From https://github.com/NilofarSheriff/mehar
+ * branch            main       -> FETCH_HEAD
+   6c31a6f..a1d9d43  main       -> origin/main
+Updating 35ae83d..a1d9d43
+Fast-forward
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ git branch
+  ayan
+* master
+  nilo
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/mehar (master)
+$ ls
+hello.txt  text.txt  zam.txt
+
+**************************************************************************************************
+
+master --> branch 1, branch2 (file1.txt, file2.txt)
+
+git config --global merge.tool p4mergetool
+git p4merge
+
+$git difftool master..branch2
+git diff --name-only master..branch2
+
+git log --oneline --graph --decorate
+
+git merge branch1
+
+git branch --merged main | grep -v "^\* main" | xargs -n 1 -r git branch -d
+
+git branch
+
+git commit -m "completed"
+
+git status
+
+**********************************************************************************************************
+
+ASSIGNMENT - 4
+
+$ git branch gitwork
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git branch
+  gitwork
+* master
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git checkout gitwork
+Switched to branch 'gitwork'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ echo "" >> hello.xml
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ git add .
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+error: 'merge/' does not have a commit checked out
+fatal: adding files failed
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ git commit -m "xml created"
+On branch gitwork
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ git add hello.xml
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ git commit -m "xml added"
+[gitwork 4a32501] xml added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.xml
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ echo >> "hello im nilo" >> hello.xml
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ git add .
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ git commit -m "contents changed"
+[gitwork 077b870] contents changed
+ 2 files changed, 1 insertion(+)
+ create mode 100644 hello im nilo
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (gitwork)
+$ git checkout master
+Switched to branch 'master'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ echo "git says git" >>hello.xml
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git add .
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git commit -m "xml added in master"
+[master cd704e4] xml added in master
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.xml
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git log --oneline --graph --decorate --all
+* cd704e4 (HEAD -> master) xml added in master
+| * 077b870 (gitwork) contents changed
+| * 4a32501 xml added
+|/
+* 37c0d8c welcome added
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git config --global diff.tool p4mergetool
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git difftool p4merge
+fatal: ambiguous argument 'p4merge': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ ^C
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git difftool master..gitwork
+git config option diff.tool set to unknown tool: p4mergetool
+Resetting to default...
+
+This message is displayed because 'diff.tool' is not configured.
+See 'git difftool --tool-help' or 'git help config' for more details.
+'git difftool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld kompare gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerge vimdiff nvimdiff
+
+Viewing (1/2): 'hello im nilo'
+Launch 'p4merge' [Y/n]? y
+git config option diff.tool set to unknown tool: p4mergetool
+Resetting to default...
+
+This message is displayed because 'diff.tool' is not configured.
+See 'git difftool --tool-help' or 'git help config' for more details.
+'git difftool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld kompare gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerge vimdiff nvimdiff
+
+Viewing (2/2): 'hello.xml'
+Launch 'p4merge' [Y/n]? y
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git merge gitwork
+Auto-merging hello.xml
+CONFLICT (add/add): Merge conflict in hello.xml
+Automatic merge failed; fix conflicts and then commit the result.
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master|MERGING)
+$ git mergetool
+git config option merge.tool set to unknown tool: p4mergetool
+Resetting to default...
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerge vimdiff nvimdiff
+Merging:
+hello.xml
+
+Normal merge conflict for 'hello.xml':
+  {local}: created file
+  {remote}: created file
+Hit return to start merge resolution tool (p4merge):
+error: invalid path './hello_BASE_1238.xml'
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master|MERGING)
+$ git commit -m "merged"
+[master 9c733b6] merged
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.xml.orig
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git add .
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git commit "nothing changed"
+error: pathspec 'nothing changed' did not match any file(s) known to git
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git commit -m "merged"
+[master c3d1a59] merged
+ 1 file changed, 6 insertions(+)
+ create mode 100644 hello.xml.orig
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ touch .gitignore
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ echo hello.xml >> .gitignore
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git commit -m "added to gitignore"
+[master 489192d] added to gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git branch -d gitwork
+Deleted branch gitwork (was 077b870).
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git branch
+* master
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/ex4 (master)
+$ git log --graph --oneline --decorate
+* 489192d (HEAD -> master) added to gitignore
+* c3d1a59 merged
+*   9c733b6 merged
+|\
+| * 077b870 contents changed
+| * 4a32501 xml added
+* | cd704e4 xml added in master
+|/
+* 37c0d8c welcome added
+
+==========================================================================================================================================================================================================================================================
+
+ASSIGNMENT 5
+
+$ git init merge
+Reinitialized existing Git repository in C:/Users/M NILOFAR/merge/.git/
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~ (master)
+$ cd merge
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/merge (master)
+$ git remote add link https://github.com/NilofarSheriff/Exno.3Merge-and-branch.git
+error: remote link already exists.
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/merge (master)
+$ git remove remote
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/merge (master)
+$ git remote remove link
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/merge (master)
+$ git remote add link https://github.com/NilofarSheriff/Exno.3Merge-and-branch.git
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/merge (master)
+$ git commit -m "branch and merge completed"
+On branch master
+nothing to commit, working tree clean
+
+M NILOFAR@LAPTOP-KUI0108O MINGW64 ~/merge (master)
+$ git push link master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 539 bytes | 539.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NilofarSheriff/Exno.3Merge-and-branch.git
+ * [new branch]      master -> master
+
+
+
+
+
+
+
+
+
