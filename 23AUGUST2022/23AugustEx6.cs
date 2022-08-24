@@ -12,9 +12,34 @@ namespace _23August
         {
             
             
-            
-            var deptno = (int)deptnames.Sales;
-            Console.WriteLine("The dept no of the department Purchase is = {0}",deptno);
+            string dept_name = " ";
+            Console.WriteLine("Enter deptname");
+            dept_name = Console.ReadLine();
+            int k;
+
+            switch (dept_name)
+            {
+                case "Purchase":
+                    k = (int)deptnames.Purchase;
+                    Console.WriteLine(k);
+                    break;
+                case "Sales":
+                    k = (int)deptnames.Sales;
+                    Console.WriteLine(k);
+                    break;
+                case "Training":
+                    k = (int)deptnames.Training;
+                    Console.WriteLine(k);
+                    break;
+                case "Accounts":
+                    k = (int)deptnames.Accounts;
+                    Console.WriteLine(k);
+                    break;
+                default:
+                    break;
+
+            }
+
             Console.ReadLine();
 
 
