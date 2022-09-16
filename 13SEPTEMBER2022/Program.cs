@@ -6,11 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using UserModule;
 
+
 namespace _13September
 {
     public class Program
     {
-        static int Stock;
+        
         static void Main(string[] args)
         {
             List<Users> userslist = new List<Users>();
@@ -28,6 +29,9 @@ namespace _13September
             userslist.Add(user5);
             userslist.Add(user6);
             userslist.Add(user7);
+            
+            
+
             List<Movie> movielist = new List<Movie>();
             Movie movie1 = new Movie() {MovieName="SitaRam",Language="Tamil",Genre="Family",Price=60};
             Movie movie2 = new Movie() { MovieName = "Vikram", Language = "Tamil", Genre = "Action" ,Price = 80 };
@@ -41,7 +45,7 @@ namespace _13September
             Movie movie10 = new Movie() { MovieName = "Barbie and 12 princess", Language = "English", Genre = "Children", Price = 80 };
             Movie movie11 = new Movie() { MovieName = "Kalank", Language = "Hindi", Genre = "History", Price = 78 };
             Movie movie12 = new Movie() { MovieName = "Pengal Naatin Kangal", Language = "Tamil", Genre = "Social awareness", Price = 54 };
-
+            
             movielist.Add(movie1);
             movielist.Add(movie2);  
             movielist.Add(movie3);
@@ -54,26 +58,12 @@ namespace _13September
             movielist.Add(movie10);
             movielist.Add(movie11);
             movielist.Add(movie12);
-            Stock = movielist.Count();
+            Movie.Stock = movielist.Count();
             Console.WriteLine("1.User Module 2.Admin Module 3.Common Options");
             int option = int.Parse(Console.ReadLine());
             switch(option){
                 case 1:
                     {
-                        Console.WriteLine("Genre :- \n 1. Family \n 2.Action \n 3.Children \n 4.Social awareness \n 5.Horror \n 6.Thriller" +
-                "\n 7.History");
-                        Console.WriteLine("Languages :- \n 1.Tamil \n 2.English \n 3.Hindi \n 4.Telugu");
-                        Console.WriteLine("Enter the language or genre to search the movies");
-                        string search = Console.ReadLine();
-                        List<Movie> Searchedmovies = movielist.FindAll(x => x.Genre == search || x.Language == search);
-                        foreach (Movie movie in Searchedmovies)
-                        {
-                            Console.ForegroundColor = ConsoleColor.Cyan;
-                            Console.WriteLine(movie.MovieName);
-                            Console.WriteLine(movie.Genre);
-                            Console.WriteLine(movie.Language);
-                            Console.WriteLine("****************************************");
-                        }
                         Console.WriteLine("Enter Username and Password");
                         Action<string, string> Login = (string username, string password) =>
                         {
@@ -93,42 +83,34 @@ namespace _13September
                                         Console.WriteLine(Movies.Genre);
                                         Console.WriteLine("______________________");
                                     }
-                                    Console.ForegroundColor = ConsoleColor.Green;
-                                    Console.WriteLine("Choose the Badge ypu need \n Options:-\n 1.Silver - 2 Movies can be" +
-                                        "Rented \n 2.Gold - 3 Movies can be Rented \n 3.Platinum - 5 Movies can be Rented \n "
-                                        );
-                                    int Userchoice = int.Parse(Console.ReadLine());
-                                    double addtotal = 0;
-                                    switch (Userchoice)
-                                    {
-                                        case 1:
-                                            {
-                                                SilverUser silverBadge = new SilverUser();
-                                                silverBadge.Username = Name.Username;
-                                                silverBadge.Password = Name.Password;
-                                                Admin admin = new Admin();
-                                                admin.Adminapproval(movielist, Stock, addtotal, 2);
+                                    char c = 'Y';
+                                    while (c == 'Y') {
+                                        Console.WriteLine("Select 1 to search Movies \n select 2 to rent movies");
+                                        int sel = int.Parse(Console.ReadLine());
+                                        switch (sel)
+                                        {
+                                            case 1:
+                                                user1.SerachMovieByLANGandGenre(movielist);
                                                 break;
-                                            }
-                                        case 2:
-                                            {
-                                                GoldUser goldBadge = new GoldUser();
-                                                goldBadge.Username = Name.Username;
-                                                goldBadge.Password = Name.Password;
-                                                Admin admin = new Admin();
-                                                admin.Adminapproval(movielist, Stock, addtotal, 3);
+                                            case 2:
+                                                user2.Renting(movielist, Pass);
                                                 break;
-                                            }
-                                        case 3:
-                                            {
-                                                PlatinumUser platinumbadge = new PlatinumUser();
-                                                platinumbadge.Username = Name.Username;
-                                                platinumbadge.Password = Name.Password;
-                                                Admin admin = new Admin();
-                                                admin.Adminapproval(movielist, Stock, addtotal, 5);
+                                            default:
+                                                Environment.Exit(1);
                                                 break;
-                                            }
+                                        }
+                                        Console.WriteLine("Do you want to continue (Y/N)");
+                                        char ch = Convert.ToChar(Console.ReadLine());
+                                        if (ch == 'Y' || ch == 'y')
+                                        {
+                                            c = 'Y';
+                                        }
+                                        else
+                                        {
+                                            break;
+                                        }
                                     }
+                                    
 
                                 }
                                 else
@@ -167,7 +149,7 @@ namespace _13September
                                     }
                                     else if (n == 3)
                                     {
-                                        admin.DeleteUsers(userslist);
+                                       admin.DeleteUsers(userslist);
                                     }
                                     break;
                                 }
@@ -225,7 +207,7 @@ namespace _13September
                         }
                         break;
                     }
-
+                    
             }
             
             
@@ -238,4 +220,6 @@ namespace _13September
             Console.ReadLine();
         }
     }
+
+    
 }

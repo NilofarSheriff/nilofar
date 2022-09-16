@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MovieName>Barbie and 12 princess</MovieName>
+  <Genre>Children</Genre>
+  <Language>English</Language>
+  <Price>80</Price>
+  <exetime>2022-09-15T15:59:26.7281639+05:30</exetime>
+  <Rented_time>2022-09-15T15:59:31.6918468+05:30</Rented_time>
+  <addtotal>576</addtotal>
+</Movie>

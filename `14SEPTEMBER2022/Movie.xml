@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ArrayOfMovie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Movie>
+    <MovieName>SitaRam</MovieName>
+    <Genre>Family</Genre>
+    <Language>Tamil</Language>
+    <Price>60</Price>
+  </Movie>
+  <Movie>
+    <MovieName>Vikram</MovieName>
+    <Genre>Action</Genre>
+    <Language>Tamil</Language>
+    <Price>80</Price>
+  </Movie>
+  <Movie>
+    <MovieName>Jillunu oru Kaadhal</MovieName>
+    <Genre>Family</Genre>
+    <Language>Tamil</Language>
+    <Price>50</Price>
+  </Movie>
+  <Movie>
+    <MovieName>Koodi vaalnthal kodi Nanmai</MovieName>
+    <Genre>Social awareness</Genre>
+    <Language>Tamil</Language>
+    <Price>50</Price>
+  </Movie>
+  <Movie>
+    <MovieName>Singam 2</MovieName>
+    <Genre>Family</Genre>
+    <Language>Tamil</Language>
+    <Price>160</Price>
+  </Movie>
+  <Movie>
+    <MovieName>Psycho</MovieName>
+    <Genre>Thriller</Genre>
+    <Language>Tamil</Language>
+    <Price>40</Price>
+  </Movie>
+  <Movie>
+    <MovieName>Pengal Naatin Kangal</MovieName>
+    <Genre>Social awareness</Genre>
+    <Language>Tamil</Language>
+    <Price>54</Price>
+  </Movie>
+</ArrayOfMovie>

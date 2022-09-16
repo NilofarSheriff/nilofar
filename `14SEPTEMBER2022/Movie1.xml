@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ArrayOfMovie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Movie>
+    <MovieName>Barbie and 12 princess</MovieName>
+    <Genre>Children</Genre>
+    <Language>English</Language>
+    <Price>80</Price>
+  </Movie>
+</ArrayOfMovie>

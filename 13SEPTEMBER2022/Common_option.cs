@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace UserModule
 {
     public class Commonoption
     {
-        public void changePassword(List<Users> userlist,Users usere)
+        public void changePassword(List<Users> userlist, Users usere)
         {
+
             Console.WriteLine("Enter Password");
             string pass = Console.ReadLine();
             Users user = userlist.Find(x => usere.Password == pass);
             if (user != null)
             {
-                  DateTime AddedDate = usere.AddedDate;
-                  DateTime now = DateTime.Now;
+                DateTime AddedDate = usere.AddedDate;
+                DateTime now = DateTime.Now;
                 if ((now.Month - AddedDate.Month) >= 1)
                 {
                     Console.WriteLine("Change your Password");
@@ -33,9 +33,9 @@ namespace UserModule
                 else
                 {
                     Console.WriteLine("Thank you!! for visiting");
-                   
+
                 }
-                
+
 
             }
             else
@@ -43,8 +43,8 @@ namespace UserModule
                 Console.WriteLine("Incorrect Password");
             }
 
-    
-            
+
+
         }
         public void userpro(List<Users> userslist)
         {
@@ -53,19 +53,19 @@ namespace UserModule
             Console.WriteLine("Enter Password");
             string pass = Console.ReadLine();
             Users sel1 = userslist.Find(x => x.Username == name);
-           
+
             if (sel1 != null)
             {
                 Users sel2 = userslist.Find(x => sel1.Password == pass);
-                if (sel2!= null)
+                if (sel2 != null)
                 {
-                    Console.WriteLine("UserName : "+sel1.Username);
-                    Console.WriteLine("Password: "+sel1.Password);
-                    Console.WriteLine("Phone number: "+sel1.PhoneNumber);
-                    Console.WriteLine("Added date : "+sel1.AddedDate);
+                    Console.WriteLine("UserName : " + sel1.Username);
+                    Console.WriteLine("Password: " + sel1.Password);
+                    Console.WriteLine("Phone number: " + sel1.PhoneNumber);
+                    Console.WriteLine("Added date : " + sel1.AddedDate);
                     Console.WriteLine();
                     Console.WriteLine("Do you want to Update Details\n Yes or No");
-                    string op =Console.ReadLine();
+                    string op = Console.ReadLine();
                     if (op == "Yes")
                     {
                         Console.WriteLine("Enter the Updated UserName");
@@ -76,7 +76,7 @@ namespace UserModule
                         sel1.PhoneNumber = int.Parse(Console.ReadLine());
                         Console.WriteLine();
                         Console.WriteLine("Updated Details are as follows");
-                        Console.ForegroundColor=ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("UserName : " + sel1.Username);
                         Console.WriteLine("Password: " + sel1.Password);
                         Console.WriteLine("Phone number: " + sel1.PhoneNumber);
@@ -84,7 +84,8 @@ namespace UserModule
                         Console.WriteLine();
 
                     }
-                    else if(op=="No"){
+                    else if (op == "No")
+                    {
 
                         Console.WriteLine("UserName : " + sel1.Username);
                         Console.WriteLine("Password: " + sel1.Password);
@@ -107,5 +108,4 @@ namespace UserModule
             }
         }
     }
-
 }
