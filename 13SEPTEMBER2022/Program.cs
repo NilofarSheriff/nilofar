@@ -15,13 +15,13 @@ namespace _13September
         static void Main(string[] args)
         {
             List<Users> userslist = new List<Users>();
-            Users user1 = new Users() { Username = "Mehar", Password = "Abcde",AddedDate= new DateTime(2022,02,2) };
-            Users user2 = new Users() { Username = "Nilofar", Password = "123456", AddedDate = new DateTime(2022, 03, 12) };
-            Users user3 = new Users() { Username = "Zamruth", Password = "23345", AddedDate = new DateTime(2022, 01, 23) };
-            Users user4 = new Users() { Username = "Sheriff", Password = "34568", AddedDate = new DateTime(2022, 02, 14) };
-            Users user5 = new Users() { Username = "Asif", Password = "12344", AddedDate = new DateTime(2022, 1, 2) };
-            Users user6 = new Users() { Username = "Varshini", Password = "R1233", AddedDate = new DateTime(2022, 2, 2) };
-            Users user7 = new Users() { Username = "Israth", Password = "QWERTY", AddedDate = new DateTime(2022, 02, 2) };
+            Users user1 = new Users() { Username = "Mehar", Password = "Abcde", PhoneNumber = "123456789", AddedDate = new DateTime(2022, 02, 2) };
+            Users user2 = new Users() { Username = "Nilofar", Password = "123456", PhoneNumber = "349558789", AddedDate = new DateTime(2022, 03, 12) };
+            Users user3 = new Users() { Username = "Zamruth", Password = "23345", PhoneNumber = "1234567878", AddedDate = new DateTime(2022, 01, 23) };
+            Users user4 = new Users() { Username = "Sheriff", Password = "34568", PhoneNumber = "931123456", AddedDate = new DateTime(2022, 02, 14) };
+            Users user5 = new Users() { Username = "Asif", Password = "12344", PhoneNumber = "874123456", AddedDate = new DateTime(2022, 1, 2) };
+            Users user6 = new Users() { Username = "Varshini", Password = "R1233", PhoneNumber = "7865123456", AddedDate = new DateTime(2022, 2, 2) };
+            Users user7 = new Users() { Username = "Israth", Password = "QWERTY", PhoneNumber = "68945123456", AddedDate = new DateTime(2022, 02, 2) };
             userslist.Add(user1);
             userslist.Add(user2);
             userslist.Add(user3);
@@ -29,8 +29,8 @@ namespace _13September
             userslist.Add(user5);
             userslist.Add(user6);
             userslist.Add(user7);
-            
-            
+
+
 
             List<Movie> movielist = new List<Movie>();
             Movie movie1 = new Movie() {MovieName="SitaRam",Language="Tamil",Genre="Family",Price=60};

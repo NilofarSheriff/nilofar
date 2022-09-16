@@ -209,8 +209,18 @@ namespace UserModule
                     Console.WriteLine("Enter Password");
                     user.Password = Console.ReadLine();
                     Console.WriteLine("Enter Phone Number");
-                    user.PhoneNumber = int.Parse(Console.ReadLine());
-                    userlist.Add(user);
+                    user.PhoneNumber = Console.ReadLine();
+                    Users check = userlist.Find(X => X.PhoneNumber == user.PhoneNumber);
+                    if (check == null)
+                    {
+                        userlist.Add(user);
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("User already Registered");
+                    }
+                        
 
                 }
                 foreach (Users user in userlist)
@@ -244,7 +254,7 @@ namespace UserModule
                 Console.WriteLine("Enter the Updated Password");
                 Name.Password = Console.ReadLine();
                 Console.WriteLine("Enter the Updated PhoneNumber");
-                Name.PhoneNumber = int.Parse(Console.ReadLine());
+                Name.PhoneNumber = Console.ReadLine();
                 foreach (Users user in userlist)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;

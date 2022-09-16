@@ -73,7 +73,7 @@ namespace UserModule
                         Console.WriteLine("Enter the Updated Password");
                         sel1.Password = Console.ReadLine();
                         Console.WriteLine("Enter the Updated PhoneNumber");
-                        sel1.PhoneNumber = int.Parse(Console.ReadLine());
+                        sel1.PhoneNumber = Console.ReadLine();
                         Console.WriteLine();
                         Console.WriteLine("Updated Details are as follows");
                         Console.ForegroundColor = ConsoleColor.Green;

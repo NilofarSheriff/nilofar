@@ -192,9 +192,9 @@ namespace UserModule
 		public string Username { get; set; }
 		public string Password { get; set; }
 
-		private int _phno;
+		private string _phno;
 
-		public int PhoneNumber
+		public string PhoneNumber
 		{
 			get { return _phno; }
 			set { _phno = value; }
