@@ -1,0 +1,24 @@
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.pdb
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.AssemblyReference.cache
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CoreCompileInputs.cache
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.pdb
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll.config
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.xml
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.xml
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CopyComplete
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll.config
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.pdb
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.dll
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.xml
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.AssemblyReference.cache
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CoreCompileInputs.cache
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CopyComplete
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.dll
+C:\Users\M NILOFAR\source\repos\sept291\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.pdb
