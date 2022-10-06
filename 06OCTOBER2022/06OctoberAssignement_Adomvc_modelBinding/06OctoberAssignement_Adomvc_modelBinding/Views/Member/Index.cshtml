@@ -1,0 +1,56 @@
+﻿@model IEnumerable<_06OctoberAssignement_Adomvc_modelBinding.Models.MemberModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Add Member", "AddMember")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MemberId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MemberName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Account_open_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxBooks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PenaltyAmount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemberId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemberName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Account_open_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxBooks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PenaltyAmount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditMember", new { id = item.MemberId }) |
+            @Html.ActionLink("Delete", "DeleteMember", new { id=item.MemberId})
+        </td>
+    </tr>
+}
+
+</table>
