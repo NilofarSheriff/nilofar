@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "GetDetails";
+}
+
+
+<h2>Get Details of Members</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Member Id</th>
+        <th>Member Name</th>
+        <th>Account_open_Date</th>
+        <th>MaxBooks</th>
+        <th>PenaltyAmount</th>
+    </tr>
+    @foreach (var item in ViewBag.ListMem)
+    {
+        <tr>
+            <td>@item.MemberId</td>
+            <td>@item.MemberName</td>
+            <td>@item.Account_open_Date</td>
+            <td>@item.MaxBooks</td>
+            <td>@item.PenaltyAmount</td>
+        </tr>
+    }
+
+
+
+
+</table>
+

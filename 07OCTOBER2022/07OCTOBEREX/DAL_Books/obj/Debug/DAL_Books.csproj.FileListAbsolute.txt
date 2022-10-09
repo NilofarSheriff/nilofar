@@ -1,0 +1,9 @@
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\bin\Debug\DAL_Books.dll
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\bin\Debug\DAL_Books.pdb
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\obj\Debug\DAL_Books.csproj.AssemblyReference.cache
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\obj\Debug\DAL_Books.csproj.CoreCompileInputs.cache
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\obj\Debug\DAL_Books.dll
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\obj\Debug\DAL_Books.pdb
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\bin\Debug\Helper.dll
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\bin\Debug\Helper.pdb
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\DAL_Books\obj\Debug\DAL_Books.csproj.CopyComplete

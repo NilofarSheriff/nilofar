@@ -1,0 +1,50 @@
+﻿@model _06OctoberAssignement_Adomvc_modelBinding.Models.ProductModel
+
+@{
+    ViewBag.Title = "FindProduct";
+}
+
+<h2>FindProduct</h2>
+
+<div>
+    <h4>ProductModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Proid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MfgDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MfgDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

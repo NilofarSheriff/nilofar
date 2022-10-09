@@ -1,0 +1,33 @@
+﻿@using _06OctoberAssignement_Adomvc_modelBinding.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h2>GetList</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Book No</th>
+        <th>Book Name</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Category</th>
+    </tr>
+    @foreach (BookModel item in (List <BookModel>)ViewData["Listb"])
+        {
+            <tr>
+                <td>@item.BookNo</td>
+                <td>@item.BookName</td>
+                <td>@item.Author</td>
+                <td>@item.Price</td>
+                <td>@item.Category</td>
+            </tr>
+        }
+   
+
+
+
+</table>
+

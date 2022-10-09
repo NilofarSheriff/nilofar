@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="fn_Booklist_Result">
+    <Property Name="Book_No" Type="Decimal" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Author" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="Cost" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="Category" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Userid" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Book_No" />
+    </Key>
+    <Property Name="Book_No" Type="Decimal" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Author" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="Cost" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="Category" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Book_C">
+    <Key>
+      <PropertyRef Name="Book_No" />
+    </Key>
+    <Property Name="Book_No" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Decimal" Precision="5" Scale="2" />
+    <NavigationProperty Name="Issue_C" Relationship="Self.add_pk_fk_book" FromRole="Book_C" ToRole="Issue_C" />
+  </EntityType>
+  <EntityType Name="Issue">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Book_No" Type="Decimal" Precision="6" Scale="0" />
+    <Property Name="Member_Id" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="Issue_Date" Type="DateTime" Precision="0" />
+    <Property Name="Return_Date" Type="DateTime" Precision="0" />
+    <Property Name="Comments" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Issue_C">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Member_Id" Type="Int32" />
+    <Property Name="Book_No" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Issue_Date" Type="DateTime" Precision="3" />
+    <Property Name="Return_Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Book_C" Relationship="Self.add_pk_fk_book" FromRole="Issue_C" ToRole="Book_C" />
+    <NavigationProperty Name="Member_C" Relationship="Self.add_pk_fk" FromRole="Issue_C" ToRole="Member_C" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="Member_Id" />
+    </Key>
+    <Property Name="Member_Id" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Member_Name" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="Acc_Open_Date" Type="DateTime" Precision="0" />
+    <Property Name="Max_Books_Allowed" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="Penalty_Amount" Type="Decimal" Precision="7" Scale="2" />
+  </EntityType>
+  <EntityType Name="Member_C">
+    <Key>
+      <PropertyRef Name="Member_Id" />
+    </Key>
+    <Property Name="Member_Id" Type="Int32" Nullable="false" />
+    <Property Name="Account_Open_Date" Type="DateTime" Precision="3" />
+    <Property Name="Max_Allowed_Books" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Penalty_Amount" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Issue_C" Relationship="Self.add_pk_fk" FromRole="Member_C" ToRole="Issue_C" />
+  </EntityType>
+  <EntityType Name="Member102">
+    <Key>
+      <PropertyRef Name="Member_Id" />
+    </Key>
+    <Property Name="Member_Id" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Member_Name" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="Acc_Open_Date" Type="DateTime" Precision="0" />
+    <Property Name="Max_Books_Allowed" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="Penalty_Amount" Type="Decimal" Precision="7" Scale="2" />
+  </EntityType>
+  <EntityType Name="Pricegreaterthan500">
+    <Key>
+      <PropertyRef Name="Book_No" />
+      <PropertyRef Name="Book_Name" />
+    </Key>
+    <Property Name="Book_No" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Decimal" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="review">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+      <PropertyRef Name="Book_Name" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Member_Id" Type="Int32" />
+    <Property Name="Issue_Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="review1">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+      <PropertyRef Name="Book_Name" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Member_Id" Type="Int32" />
+    <Property Name="Issue_Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="User_Constraints">
+    <Key>
+      <PropertyRef Name="CONSTRAINT_NAME" />
+    </Key>
+    <Property Name="CONSTRAINT_TYPE" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="CONSTRAINT_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User_Constraints1">
+    <Key>
+      <PropertyRef Name="CONSTRAINT_NAME" />
+    </Key>
+    <Property Name="CONSTRAINT_TYPE" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="CONSTRAINT_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="add_pk_fk_book">
+    <End Role="Book_C" Type="Self.Book_C" Multiplicity="0..1" />
+    <End Role="Issue_C" Type="Self.Issue_C" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book_C">
+        <PropertyRef Name="Book_No" />
+      </Principal>
+      <Dependent Role="Issue_C">
+        <PropertyRef Name="Book_No" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="add_pk_fk">
+    <End Role="Member_C" Type="Self.Member_C" Multiplicity="0..1" />
+    <End Role="Issue_C" Type="Self.Issue_C" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member_C">
+        <PropertyRef Name="Member_Id" />
+      </Principal>
+      <Dependent Role="Issue_C">
+        <PropertyRef Name="Member_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibraryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="Book_C" EntityType="Self.Book_C" />
+    <EntitySet Name="Issues" EntityType="Self.Issue" />
+    <EntitySet Name="Issue_C" EntityType="Self.Issue_C" />
+    <EntitySet Name="Members" EntityType="Self.Member" />
+    <EntitySet Name="Member_C" EntityType="Self.Member_C" />
+    <EntitySet Name="Member102" EntityType="Self.Member102" />
+    <EntitySet Name="Pricegreaterthan500" EntityType="Self.Pricegreaterthan500" />
+    <EntitySet Name="reviews" EntityType="Self.review" />
+    <EntitySet Name="review1" EntityType="Self.review1" />
+    <EntitySet Name="User_Constraints" EntityType="Self.User_Constraints" />
+    <EntitySet Name="User_Constraints1" EntityType="Self.User_Constraints1" />
+    <AssociationSet Name="add_pk_fk_book" Association="Self.add_pk_fk_book">
+      <End Role="Book_C" EntitySet="Book_C" />
+      <End Role="Issue_C" EntitySet="Issue_C" />
+    </AssociationSet>
+    <AssociationSet Name="add_pk_fk" Association="Self.add_pk_fk">
+      <End Role="Member_C" EntitySet="Member_C" />
+      <End Role="Issue_C" EntitySet="Issue_C" />
+    </AssociationSet>
+    <FunctionImport Name="fn_Booklist" IsComposable="true" ReturnType="Collection(LibraryModel.fn_Booklist_Result)">
+      <Parameter Name="user_id" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="change_return_status">
+      <Parameter Name="book_no" Mode="In" Type="Decimal" />
+      <Parameter Name="comments" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="change_return_statuss">
+      <Parameter Name="id" Mode="In" Type="Decimal" />
+      <Parameter Name="comments" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Delete_row_Procedure">
+      <Parameter Name="bookid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_UserLogin">
+      <Parameter Name="user_id" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="book_no" Mode="InOut" Type="Decimal" />
+      <Parameter Name="book_name" Mode="InOut" Type="String" />
+      <Parameter Name="author" Mode="InOut" Type="String" />
+      <Parameter Name="cost" Mode="InOut" Type="Decimal" />
+      <Parameter Name="category" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateBookDetails">
+      <Parameter Name="book_id" Mode="In" Type="Decimal" />
+      <Parameter Name="book_name" Mode="In" Type="String" />
+      <Parameter Name="Author" Mode="In" Type="String" />
+      <Parameter Name="cost" Mode="In" Type="Decimal" />
+      <Parameter Name="category" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

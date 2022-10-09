@@ -1,0 +1,6 @@
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\Helper\bin\Debug\Helper.dll
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\Helper\bin\Debug\Helper.pdb
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\Helper\obj\Debug\Helper.dll
+C:\Users\M NILOFAR\source\repos\06OctoberAssignement_Adomvc_modelBinding\Helper\obj\Debug\Helper.pdb

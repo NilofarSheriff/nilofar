@@ -1,0 +1,59 @@
+﻿@model _06OctoberAssignement_Adomvc_modelBinding.Issue
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Issue</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Book_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Issue_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Issue_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Return_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Return_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Lib_Issue_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

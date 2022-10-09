@@ -1,0 +1,51 @@
+﻿@model _06OctoberAssignement_Adomvc_modelBinding.Member
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Acc_Open_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Acc_Open_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Max_Books_Allowed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Max_Books_Allowed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Penalty_Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Penalty_Amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Member_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

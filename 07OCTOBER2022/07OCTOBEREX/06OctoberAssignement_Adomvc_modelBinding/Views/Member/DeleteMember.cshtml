@@ -1,0 +1,64 @@
+﻿@model _06OctoberAssignement_Adomvc_modelBinding.Models.MemberModel
+
+@{
+    ViewBag.Title = "DeleteMember";
+}
+
+<h2>DeleteMember</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MemberModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account_open_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account_open_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxBooks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxBooks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PenaltyAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PenaltyAmount)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

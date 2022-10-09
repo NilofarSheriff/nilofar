@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Book_No" />
+    </Key>
+    <Property Name="Book_No" Type="numeric" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="varchar" MaxLength="30" />
+    <Property Name="Author" Type="char" MaxLength="30" />
+    <Property Name="Cost" Type="numeric" Precision="7" Scale="2" />
+    <Property Name="Category" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Book_C">
+    <Key>
+      <PropertyRef Name="Book_No" />
+    </Key>
+    <Property Name="Book_No" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Category" Type="varchar" MaxLength="30" />
+    <Property Name="Price" Type="numeric" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="Issue">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Book_No" Type="numeric" Precision="6" Scale="0" />
+    <Property Name="Member_Id" Type="numeric" Precision="5" Scale="0" />
+    <Property Name="Issue_Date" Type="date" />
+    <Property Name="Return_Date" Type="date" />
+    <Property Name="Comments" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Issue_C">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Member_Id" Type="int" />
+    <Property Name="Book_No" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Issue_Date" Type="datetime" />
+    <Property Name="Return_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="Member_Id" />
+    </Key>
+    <Property Name="Member_Id" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Member_Name" Type="char" MaxLength="20" />
+    <Property Name="Acc_Open_Date" Type="date" />
+    <Property Name="Max_Books_Allowed" Type="numeric" Precision="2" Scale="0" />
+    <Property Name="Penalty_Amount" Type="numeric" Precision="7" Scale="2" />
+  </EntityType>
+  <EntityType Name="Member_C">
+    <Key>
+      <PropertyRef Name="Member_Id" />
+    </Key>
+    <Property Name="Member_Id" Type="int" Nullable="false" />
+    <Property Name="Account_Open_Date" Type="datetime" />
+    <Property Name="Max_Allowed_Books" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Penalty_Amount" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Library.dbo.Member102' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Member102">
+    <Key>
+      <PropertyRef Name="Member_Id" />
+    </Key>
+    <Property Name="Member_Id" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Member_Name" Type="char" MaxLength="20" />
+    <Property Name="Acc_Open_Date" Type="date" />
+    <Property Name="Max_Books_Allowed" Type="numeric" Precision="2" Scale="0" />
+    <Property Name="Penalty_Amount" Type="numeric" Precision="7" Scale="2" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Library.dbo.Users' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Users">
+          <Property Name="Userid" Type="varchar" MaxLength="10" />
+          <Property Name="Password" Type="varchar" MaxLength="20" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Library.dbo.Pricegreaterthan500' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pricegreaterthan500">
+    <Key>
+      <PropertyRef Name="Book_No" />
+      <PropertyRef Name="Book_Name" />
+    </Key>
+    <Property Name="Book_No" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Category" Type="varchar" MaxLength="30" />
+    <Property Name="Price" Type="numeric" Precision="5" Scale="2" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Library.dbo.review' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="review">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+      <PropertyRef Name="Book_Name" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Member_Id" Type="int" />
+    <Property Name="Issue_Date" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Library.dbo.review1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="review1">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+      <PropertyRef Name="Book_Name" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Member_Id" Type="int" />
+    <Property Name="Issue_Date" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Library.dbo.User_Constraints' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="User_Constraints">
+    <Key>
+      <PropertyRef Name="CONSTRAINT_NAME" />
+    </Key>
+    <Property Name="CONSTRAINT_TYPE" Type="varchar" MaxLength="11" />
+    <Property Name="CONSTRAINT_NAME" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Library.dbo.User_Constraints1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="User_Constraints1">
+    <Key>
+      <PropertyRef Name="CONSTRAINT_NAME" />
+    </Key>
+    <Property Name="CONSTRAINT_TYPE" Type="varchar" MaxLength="11" />
+    <Property Name="CONSTRAINT_NAME" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <Association Name="add_pk_fk">
+    <End Role="Member_C" Type="Self.Member_C" Multiplicity="0..1" />
+    <End Role="Issue_C" Type="Self.Issue_C" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member_C">
+        <PropertyRef Name="Member_Id" />
+      </Principal>
+      <Dependent Role="Issue_C">
+        <PropertyRef Name="Member_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="add_pk_fk_book">
+    <End Role="Book_C" Type="Self.Book_C" Multiplicity="0..1" />
+    <End Role="Issue_C" Type="Self.Issue_C" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book_C">
+        <PropertyRef Name="Book_No" />
+      </Principal>
+      <Dependent Role="Issue_C">
+        <PropertyRef Name="Book_No" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="change_return_status" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="book_no" Type="numeric" Mode="In" />
+    <Parameter Name="comments" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="change_return_statuss" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="numeric" Mode="In" />
+    <Parameter Name="comments" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Delete_row_Procedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="Delete row Procedure">
+    <Parameter Name="bookid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="fn_Booklist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="varchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Book_No" Type="numeric" Precision="6" Scale="0" Nullable="false" />
+          <Property Name="Book_Name" Type="varchar" MaxLength="30" />
+          <Property Name="Author" Type="char" MaxLength="30" />
+          <Property Name="Cost" Type="numeric" Precision="7" Scale="2" />
+          <Property Name="Category" Type="char" MaxLength="10" />
+          <Property Name="Userid" Type="varchar" MaxLength="10" />
+          <Property Name="Password" Type="varchar" MaxLength="20" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="sp_UserLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="user_id" Type="varchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
+    <Parameter Name="book_no" Type="numeric" Mode="InOut" />
+    <Parameter Name="book_name" Type="varchar" Mode="InOut" />
+    <Parameter Name="author" Type="varchar" Mode="InOut" />
+    <Parameter Name="cost" Type="numeric" Mode="InOut" />
+    <Parameter Name="category" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="UpdateBookDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="book_id" Type="numeric" Mode="In" />
+    <Parameter Name="book_name" Type="varchar" Mode="In" />
+    <Parameter Name="Author" Type="varchar" Mode="In" />
+    <Parameter Name="cost" Type="numeric" Mode="In" />
+    <Parameter Name="category" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="LibraryModelStoreContainer">
+    <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Book_C" EntityType="Self.Book_C" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Issue" EntityType="Self.Issue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Issue_C" EntityType="Self.Issue_C" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member_C" EntityType="Self.Member_C" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member102" EntityType="Self.Member102" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Member102].[Member_Id] AS [Member_Id], 
+    [Member102].[Member_Name] AS [Member_Name], 
+    [Member102].[Acc_Open_Date] AS [Acc_Open_Date], 
+    [Member102].[Max_Books_Allowed] AS [Max_Books_Allowed], 
+    [Member102].[Penalty_Amount] AS [Penalty_Amount]
+    FROM [dbo].[Member102] AS [Member102]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pricegreaterthan500" EntityType="Self.Pricegreaterthan500" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pricegreaterthan500].[Book_No] AS [Book_No], 
+    [Pricegreaterthan500].[Book_Name] AS [Book_Name], 
+    [Pricegreaterthan500].[Category] AS [Category], 
+    [Pricegreaterthan500].[Price] AS [Price]
+    FROM [dbo].[Pricegreaterthan500] AS [Pricegreaterthan500]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="review" EntityType="Self.review" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [review].[Lib_Issue_Id] AS [Lib_Issue_Id], 
+    [review].[Book_Name] AS [Book_Name], 
+    [review].[Member_Id] AS [Member_Id], 
+    [review].[Issue_Date] AS [Issue_Date]
+    FROM [dbo].[review] AS [review]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="review1" EntityType="Self.review1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [review1].[Lib_Issue_Id] AS [Lib_Issue_Id], 
+    [review1].[Book_Name] AS [Book_Name], 
+    [review1].[Member_Id] AS [Member_Id], 
+    [review1].[Issue_Date] AS [Issue_Date]
+    FROM [dbo].[review1] AS [review1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="User_Constraints" EntityType="Self.User_Constraints" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [User_Constraints].[CONSTRAINT_TYPE] AS [CONSTRAINT_TYPE], 
+    [User_Constraints].[CONSTRAINT_NAME] AS [CONSTRAINT_NAME]
+    FROM [dbo].[User_Constraints] AS [User_Constraints]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="User_Constraints1" EntityType="Self.User_Constraints1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [User_Constraints1].[CONSTRAINT_TYPE] AS [CONSTRAINT_TYPE], 
+    [User_Constraints1].[CONSTRAINT_NAME] AS [CONSTRAINT_NAME]
+    FROM [dbo].[User_Constraints1] AS [User_Constraints1]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="add_pk_fk" Association="Self.add_pk_fk">
+      <End Role="Member_C" EntitySet="Member_C" />
+      <End Role="Issue_C" EntitySet="Issue_C" />
+    </AssociationSet>
+    <AssociationSet Name="add_pk_fk_book" Association="Self.add_pk_fk_book">
+      <End Role="Book_C" EntitySet="Book_C" />
+      <End Role="Issue_C" EntitySet="Issue_C" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
