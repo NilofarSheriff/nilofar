@@ -1,0 +1,6 @@
+C:\Users\M NILOFAR\source\repos\CustomerOrderService\CustomerOrderService\bin\Debug\CustomerOrderService.dll
+C:\Users\M NILOFAR\source\repos\CustomerOrderService\CustomerOrderService\bin\Debug\CustomerOrderService.pdb
+C:\Users\M NILOFAR\source\repos\CustomerOrderService\CustomerOrderService\obj\Debug\CustomerOrderService.csproj.AssemblyReference.cache
+C:\Users\M NILOFAR\source\repos\CustomerOrderService\CustomerOrderService\obj\Debug\CustomerOrderService.csproj.CoreCompileInputs.cache
+C:\Users\M NILOFAR\source\repos\CustomerOrderService\CustomerOrderService\obj\Debug\CustomerOrderService.dll
+C:\Users\M NILOFAR\source\repos\CustomerOrderService\CustomerOrderService\obj\Debug\CustomerOrderService.pdb

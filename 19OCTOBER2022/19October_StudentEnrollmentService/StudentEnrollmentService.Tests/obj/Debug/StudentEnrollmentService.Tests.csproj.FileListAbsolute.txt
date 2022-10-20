@@ -1,0 +1,17 @@
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\StudentEnrollmentService.Tests.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\StudentEnrollmentService.Tests.pdb
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\obj\Debug\StudentEnrollmentService.Tests.csproj.AssemblyReference.cache
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\obj\Debug\StudentEnrollmentService.Tests.csproj.CoreCompileInputs.cache
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\obj\Debug\StudentEnrollmentService.Tests.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\obj\Debug\StudentEnrollmentService.Tests.pdb
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\nunit.engine.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\nunit.engine.api.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\nunit.engine.core.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\testcentric.engine.metadata.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\19October_StudentEnrollmentService.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\nunit.framework.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\19October_StudentEnrollmentService.pdb
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\bin\Debug\nunit.framework.xml
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\StudentEnrollmentService.Tests\obj\Debug\StudentEnrollmentService.Tests.csproj.CopyComplete

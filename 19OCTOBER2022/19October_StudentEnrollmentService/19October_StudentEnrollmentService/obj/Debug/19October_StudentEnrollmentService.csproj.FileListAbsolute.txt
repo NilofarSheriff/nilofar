@@ -1,0 +1,6 @@
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\19October_StudentEnrollmentService\bin\Debug\19October_StudentEnrollmentService.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\19October_StudentEnrollmentService\bin\Debug\19October_StudentEnrollmentService.pdb
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\19October_StudentEnrollmentService\obj\Debug\19October_StudentEnrollmentService.csproj.AssemblyReference.cache
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\19October_StudentEnrollmentService\obj\Debug\19October_StudentEnrollmentService.csproj.CoreCompileInputs.cache
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\19October_StudentEnrollmentService\obj\Debug\19October_StudentEnrollmentService.dll
+C:\Users\M NILOFAR\source\repos\19October_StudentEnrollmentService\19October_StudentEnrollmentService\obj\Debug\19October_StudentEnrollmentService.pdb
