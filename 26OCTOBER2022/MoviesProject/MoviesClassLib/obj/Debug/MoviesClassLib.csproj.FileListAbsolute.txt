@@ -1,0 +1,12 @@
+D:\Repos\MoviesProject\MoviesClassLib\bin\Debug\MoviesClassLib.dll.config
+D:\Repos\MoviesProject\MoviesClassLib\bin\Debug\MoviesClassLib.dll
+D:\Repos\MoviesProject\MoviesClassLib\bin\Debug\MoviesClassLib.pdb
+D:\Repos\MoviesProject\MoviesClassLib\bin\Debug\EntityFramework.dll
+D:\Repos\MoviesProject\MoviesClassLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\Repos\MoviesProject\MoviesClassLib\bin\Debug\EntityFramework.xml
+D:\Repos\MoviesProject\MoviesClassLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\Repos\MoviesProject\MoviesClassLib\obj\Debug\MoviesClassLib.csproj.AssemblyReference.cache
+D:\Repos\MoviesProject\MoviesClassLib\obj\Debug\MoviesClassLib.csproj.CoreCompileInputs.cache
+D:\Repos\MoviesProject\MoviesClassLib\obj\Debug\MoviesClassLib.csproj.CopyComplete
+D:\Repos\MoviesProject\MoviesClassLib\obj\Debug\MoviesClassLib.dll
+D:\Repos\MoviesProject\MoviesClassLib\obj\Debug\MoviesClassLib.pdb
